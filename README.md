@@ -30,6 +30,17 @@ and the Flutter guide for
 <!-- TODO: Include short and useful examples for package users. Add longer examples -->
 <!-- to `/example` folder. -->
 
+Change:
+
+```dart
+Error.throwWithStackTrace(
+    MyCustomException('$e'),
+    trace,
+);
+```
+
+To:
+
 ```dart
 Error.throwWithStackTrace(
     MyCustomException('$e'),
